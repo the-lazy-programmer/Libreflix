@@ -1,4 +1,4 @@
-package com.libreflix.libreflixApp; // Certifique-se de que o pacote corresponda ao seu projeto
+package com.libreflix.libreflixApp;
 
 import android.os.Bundle;
 import androidx.activity.EdgeToEdge;
@@ -10,7 +10,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_home); // Referencia o layout XML
+        setContentView(R.layout.activity_home);
     }
 }
 
