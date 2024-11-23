@@ -1,6 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFEFEF"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal"
+        android:marginBottom="24dp" />
+
+    <!-- Campo Nome -->
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:background="FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo Username -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo Email -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo Senha -->
+    <EditText
+        android:id="@+id/etSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Botão Criar Conta -->
+    <Button
+        android:id="@+id/btnCriarConta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Criar Conta"
+        android:backgroundTint="#008080"
+        android:textColor="#FFF"
+        android:padding="12dp" />
+
+    <!-- Texto para Login -->
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Já tem uma conta? Entre agora"
+        android:textSize="14sp"
+        android:textColor="#A0522D"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
