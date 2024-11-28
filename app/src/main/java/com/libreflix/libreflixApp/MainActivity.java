@@ -14,13 +14,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_entrar);
 
 
-        editTextUsername = findViewById(R.id.editTextUsername);
-        editTextPassword = findViewById(R.id.editTextPassword);
-        Button buttonLogin = findViewById(R.id.buttonLogin);
-        Button buttonRegister = findViewById(R.id.buttonRegister);
+        editTextUsername = findViewById(R.id.editTextTextEmailAddress);
+        editTextPassword = findViewById(R.id.editTextTextPassword);
+        Button buttonLogin = findViewById(R.id.entrar);
+        Button buttonConvidado = findViewById(R.id.entrarConvidado);
 
 
         buttonLogin.setOnClickListener(new View.OnClickListener() {
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonRegister.setOnClickListener(new View.OnClickListener() {
+        buttonConvidado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
