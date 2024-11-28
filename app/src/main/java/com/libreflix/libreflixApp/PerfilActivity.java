@@ -638,4 +638,3 @@ public class PerfilActivity extends Context {
         return false;
     }
 }
-
