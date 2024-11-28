@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#14181C">
+    android:background="#14181C"
+    android:backgroundTint="#2B2D30">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,38 +26,43 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="16dp"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_mais_visto4"
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="#B63232"
+                android:backgroundTint="#C10000"
+                android:text="Mais Visto"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/btn_mais_visto"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
                 android:layout_weight="1"
-                android:text="Mais Visto"
                 android:background="#333333"
-                android:textColor="#FFFFFF"
-                android:layout_marginEnd="4dp" />
-
-            <Button
-                android:id="@+id/btn_mais_review"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="Mais Review"
-                android:background="#333333"
-                android:textColor="#FFFFFF"
-                android:layout_marginEnd="4dp" />
+                android:textColor="#FFFFFF" />
 
             <Button
-                android:id="@+id/btn_novidades"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/btn_mais_visto2"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
                 android:layout_weight="1"
+                android:background="#D00C0C"
+                android:backgroundTint="#D11919"
                 android:text="Novidades"
-                android:background="#0078D4"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
         </LinearLayout>
 
         <!-- Destaque do mês -->
@@ -73,8 +79,8 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginTop="8dp"
-            android:src="@drawable/sample_image"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/sample_image" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -88,9 +94,9 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity="center"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
 
             <View
                 android:layout_width="8dp"
@@ -130,21 +136,21 @@
                     android:layout_width="120dp"
                     android:layout_height="180dp"
                     android:layout_marginEnd="8dp"
-                    android:src="@drawable/sample_image_1"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sample_image_1" />
 
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="180dp"
                     android:layout_marginEnd="8dp"
-                    android:src="@drawable/sample_image_2"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sample_image_2" />
 
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="180dp"
-                    android:src="@drawable/sample_image_3"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sample_image_3" />
 
             </LinearLayout>
         </HorizontalScrollView>
@@ -174,21 +180,21 @@
                     android:layout_width="120dp"
                     android:layout_height="180dp"
                     android:layout_marginEnd="8dp"
-                    android:src="@drawable/sample_image_4"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sample_image_4" />
 
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="180dp"
                     android:layout_marginEnd="8dp"
-                    android:src="@drawable/sample_image_5"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sample_image_5" />
 
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="180dp"
-                    android:src="@drawable/sample_image_6"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sample_image_6" />
 
             </LinearLayout>
         </HorizontalScrollView>
@@ -197,9 +203,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity="bottom"
             android:background="#101010"
+            android:orientation="horizontal"
             android:padding="8dp"
             android:weightSum="4">
 
@@ -207,8 +213,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="24dp"
@@ -219,18 +225,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Home"
                     android:textColor="#FFFFFF"
-                    android:textSize="12sp"
-                    android:gravity="center" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="24dp"
@@ -241,18 +247,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Salvos"
                     android:textColor="#FFFFFF"
-                    android:textSize="12sp"
-                    android:gravity="center" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="24dp"
@@ -263,18 +269,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Buscar"
                     android:textColor="#FFFFFF"
-                    android:textSize="12sp"
-                    android:gravity="center" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="24dp"
@@ -285,10 +291,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Em Alta"
                     android:textColor="#0078D4"
-                    android:textSize="12sp"
-                    android:gravity="center" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
         </LinearLayout>
