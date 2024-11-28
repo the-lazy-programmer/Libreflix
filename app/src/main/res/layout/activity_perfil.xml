@@ -130,7 +130,7 @@
         tools:layout_editor_absoluteY="586dp" />
 
     <Button
-        android:id="@+id/sair"
+        android:id="@+id/sairPerfil"
         android:layout_width="300dp"
         android:layout_height="39dp"
         android:text="Sair"
