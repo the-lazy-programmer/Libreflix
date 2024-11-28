@@ -16,11 +16,47 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <Button
-        android:id="@+id/perfil"
+        android:id="@+id/home"
         android:layout_width="54dp"
         android:layout_height="55dp"
         android:text="Perfil"
         android:visibility="invisible"
         tools:layout_editor_absoluteX="302dp"
         tools:layout_editor_absoluteY="32dp" />
+
+    <Button
+        android:id="@+id/home2"
+        android:layout_width="53dp"
+        android:layout_height="64dp"
+        android:text="Home"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <Button
+        android:id="@+id/home3"
+        android:layout_width="53dp"
+        android:layout_height="63dp"
+        android:text="Salvos"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="668dp" />
+
+    <Button
+        android:id="@+id/home4"
+        android:layout_width="55dp"
+        android:layout_height="63dp"
+        android:text="Buscar"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <Button
+        android:id="@+id/home5"
+        android:layout_width="52dp"
+        android:layout_height="62dp"
+        android:text="EmAlta"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="304dp"
+        tools:layout_editor_absoluteY="669dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,4 +15,247 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
+    <Button
+        android:id="@+id/buscar"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:text="Limpar"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="320dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <Button
+        android:id="@+id/buscar2"
+        android:layout_width="103dp"
+        android:layout_height="40dp"
+        android:text="Home"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <Button
+        android:id="@+id/buscar3"
+        android:layout_width="53dp"
+        android:layout_height="64dp"
+        android:text="Home"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <Button
+        android:id="@+id/buscar4"
+        android:layout_width="53dp"
+        android:layout_height="63dp"
+        android:text="Salvos"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="668dp" />
+
+    <Button
+        android:id="@+id/buscar5"
+        android:layout_width="55dp"
+        android:layout_height="63dp"
+        android:text="Buscar"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <Button
+        android:id="@+id/buscar6"
+        android:layout_width="52dp"
+        android:layout_height="62dp"
+        android:text="EmAlta"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="304dp"
+        tools:layout_editor_absoluteY="669dp" />
+
+    <Button
+        android:id="@+id/buscar7"
+        android:layout_width="126dp"
+        android:layout_height="26dp"
+        android:text="DestaqSem"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <Button
+        android:id="@+id/buscar8"
+        android:layout_width="56dp"
+        android:layout_height="27dp"
+        android:text="Filme"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+    <Button
+        android:id="@+id/buscar10"
+        android:layout_width="72dp"
+        android:layout_height="26dp"
+        android:text="Natureza"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <Button
+        android:id="@+id/buscar11"
+        android:layout_width="72dp"
+        android:layout_height="27dp"
+        android:text="romance"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="439dp" />
+
+    <Button
+        android:id="@+id/buscar12"
+        android:layout_width="77dp"
+        android:layout_height="27dp"
+        android:text="drama"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="439dp" />
+
+    <Button
+        android:id="@+id/buscar13"
+        android:layout_width="92dp"
+        android:layout_height="26dp"
+        android:text="exp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+    <Button
+        android:id="@+id/buscar14"
+        android:layout_width="59dp"
+        android:layout_height="26dp"
+        android:text="ficcao"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="475dp" />
+
+    <Button
+        android:id="@+id/buscar15"
+        android:layout_width="87dp"
+        android:layout_height="28dp"
+        android:text="humanidade"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="473dp" />
+
+    <Button
+        android:id="@+id/buscar16"
+        android:layout_width="69dp"
+        android:layout_height="28dp"
+        android:text="ativismo"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="237dp"
+        tools:layout_editor_absoluteY="474dp" />
+
+    <Button
+        android:id="@+id/buscar17"
+        android:layout_width="66dp"
+        android:layout_height="28dp"
+        android:text="musicais"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <Button
+        android:id="@+id/buscar18"
+        android:layout_width="77dp"
+        android:layout_height="26dp"
+        android:text="educacao"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="507dp" />
+
+    <Button
+        android:id="@+id/buscar19"
+        android:layout_width="94dp"
+        android:layout_height="26dp"
+        android:text="nacional"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="507dp" />
+
+    <Button
+        android:id="@+id/buscar20"
+        android:layout_width="90dp"
+        android:layout_height="27dp"
+        android:text="estvida"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="542dp" />
+
+    <Button
+        android:id="@+id/buscar21"
+        android:layout_width="51dp"
+        android:layout_height="27dp"
+        android:text="arte"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="542dp" />
+
+    <Button
+        android:id="@+id/buscar22"
+        android:layout_width="79dp"
+        android:layout_height="29dp"
+        android:text="cyberpunk"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="540dp" />
+
+    <Button
+        android:id="@+id/buscar23"
+        android:layout_width="56dp"
+        android:layout_height="27dp"
+        android:text="scifi"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="576dp" />
+
+    <Button
+        android:id="@+id/buscar24"
+        android:layout_width="93dp"
+        android:layout_height="26dp"
+        android:text="documentario"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="576dp" />
+
+    <Button
+        android:id="@+id/buscar25"
+        android:layout_width="67dp"
+        android:layout_height="27dp"
+        android:text="Home"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="576dp" />
+
+    <Button
+        android:id="@+id/buscar26"
+        android:layout_width="73dp"
+        android:layout_height="26dp"
+        android:text="animacao"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="611dp" />
+
+    <Button
+        android:id="@+id/buscar27"
+        android:layout_width="108dp"
+        android:layout_height="28dp"
+        android:text="premiados"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="609dp" />
+
+    <Button
+        android:id="@+id/buscar28"
+        android:layout_width="56dp"
+        android:layout_height="27dp"
+        android:text="serie"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="611dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,78 @@
     android:layout_height="match_parent"
     android:background="#14181C">
 
+    <Button
+        android:id="@+id/emalta"
+        android:layout_width="135dp"
+        android:layout_height="46dp"
+        android:text="Voltar"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/emalta2"
+        android:layout_width="91dp"
+        android:layout_height="29dp"
+        android:text="MaisVisto"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <Button
+        android:id="@+id/emalta3"
+        android:layout_width="91dp"
+        android:layout_height="29dp"
+        android:text="MaisReview"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <Button
+        android:id="@+id/emalta4"
+        android:layout_width="91dp"
+        android:layout_height="29dp"
+        android:text="Novidades"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <Button
+        android:id="@+id/emalta5"
+        android:layout_width="53dp"
+        android:layout_height="64dp"
+        android:text="Home"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <Button
+        android:id="@+id/emalta6"
+        android:layout_width="53dp"
+        android:layout_height="63dp"
+        android:text="Salvos"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="668dp" />
+
+    <Button
+        android:id="@+id/emalta7"
+        android:layout_width="55dp"
+        android:layout_height="63dp"
+        android:text="Buscar"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="668dp" />
+
+    <Button
+        android:id="@+id/emalta8"
+        android:layout_width="52dp"
+        android:layout_height="62dp"
+        android:text="EmAlta"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="669dp" />
+
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="wrap_content"
