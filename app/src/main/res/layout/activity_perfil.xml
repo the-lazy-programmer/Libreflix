@@ -85,7 +85,7 @@
         tools:layout_editor_absoluteY="348dp" />
 
     <Button
-        android:id="@+id/buttonVoltar"
+        android:id="@+id/home"
         android:layout_width="54dp"
         android:layout_height="55dp"
         android:text="Voltar"
@@ -94,7 +94,7 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <Button
-        android:id="@+id/buttonTrocar"
+        android:id="@+id/trocar"
         android:layout_width="300dp"
         android:layout_height="39dp"
         android:text="Trocar Perfil"
@@ -103,7 +103,7 @@
         tools:layout_editor_absoluteY="393dp" />
 
     <Button
-        android:id="@+id/buttonConfig"
+        android:id="@+id/config"
         android:layout_width="300dp"
         android:layout_height="39dp"
         android:text="Configurações"
@@ -112,7 +112,7 @@
         tools:layout_editor_absoluteY="457dp" />
 
     <Button
-        android:id="@+id/buttonPlano"
+        android:id="@+id/plano"
         android:layout_width="300dp"
         android:layout_height="39dp"
         android:text="Plano"
@@ -121,7 +121,7 @@
         tools:layout_editor_absoluteY="522dp" />
 
     <Button
-        android:id="@+id/buttonAjuda"
+        android:id="@+id/ajuda"
         android:layout_width="300dp"
         android:layout_height="39dp"
         android:text="Ajuda"
@@ -130,7 +130,7 @@
         tools:layout_editor_absoluteY="586dp" />
 
     <Button
-        android:id="@+id/buttonSair"
+        android:id="@+id/sair"
         android:layout_width="300dp"
         android:layout_height="39dp"
         android:text="Sair"
