@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.PopupWindow;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // Start HomeActivity
                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
-                intent.putExtra("perfilUsuario", (CharSequence) perfilUsuario); // Pass perfilUsuario to HomeActivity
+                intent.putExtra("perfilUsuario", (CharSequence) perfilUsuario);
                 startActivity(intent);
             }
         });
@@ -53,8 +54,17 @@ public class MainActivity extends AppCompatActivity {
         buttonConvidado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Pass empty or default user profile for guest
+                // Mostrar uma breve explicação
+                Toast.makeText(MainActivity.this, "Entrando como convidado. Você não terá personalização no conteúdo exibido.", Toast.LENGTH_LONG).show();
+
+                // Passar um perfil padrão de convidado
+                perfilUsuario.setId(0); // ID padrão para convidado
+                perfilUsuario.setNome("Convidado");
+                perfilUsuario.setEmail("guest@libreflix.com");
+                perfilUsuario.setSenha("");
+
                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                intent.putExtra("perfilUsuario", (CharSequence) perfilUsuario);
                 startActivity(intent);
             }
         });
