@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class HomeActivity extends AppCompatActivity {
 
     // Declaração dos componentes
+    private PerfilUsuario perfilUsuario;
     private ImageView imagemFundo;
     private Button botaoPerfil;
     private Button botaoHome;
@@ -18,10 +19,14 @@ public class HomeActivity extends AppCompatActivity {
     private Button botaoBuscar;
     private Button botaoEmAlta;
 
+    public HomeActivity(PerfilUsuario perfilUsuario){
+        this.perfilUsuario = perfilUsuario;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home);
+        setContentView(R.layout.activity_home);
 
         // Inicializando os componentes
         imagemFundo = findViewById(R.id.imageView14);
