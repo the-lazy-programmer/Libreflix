@@ -1,6 +1,7 @@
 package com.libreflix.libreflixApp;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,8 +16,6 @@ public class TelaCadastroActivity extends AppCompatActivity {
     private EditText campoNome;
     private EditText campoEmail;
     private EditText campoSenha;
-    private Button botaoCriarConta;
-    private Button botaoEntrarConta;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -30,8 +29,8 @@ public class TelaCadastroActivity extends AppCompatActivity {
         campoNome = findViewById(R.id.campoName);
         campoEmail = findViewById(R.id.campoEmail);
         campoSenha = findViewById(R.id.campoSenha);
-        botaoCriarConta = findViewById(R.id.CriarConta);
-        botaoEntrarConta = findViewById(R.id.EntrarConta);
+        Button botaoCriarConta = findViewById(R.id.CriarConta);
+        Button botaoEntrarConta = findViewById(R.id.EntrarConta);
 
 
         botaoCriarConta.setVisibility(Button.VISIBLE);
@@ -40,14 +39,26 @@ public class TelaCadastroActivity extends AppCompatActivity {
 
         botaoCriarConta.setOnClickListener(view -> {
 
-            String nome = campoNome.getText().toString();
             String email = campoEmail.getText().toString();
-            String senha = campoSenha.getText().toString();
+            String username = campoNome.getText().toString();
+            String password = campoSenha.getText().toString();
+
+            // Set perfilUsuario details
+            perfilUsuario.setId((int) (Math.random() * 49 + 1)); // Example random ID
+            perfilUsuario.setNome(username);
+            perfilUsuario.setEmail(email);
+            perfilUsuario.setSenha(password);
+
+            // Start HomeActivity
+            Intent intent = new Intent(TelaCadastroActivity.this, HomeActivity.class);
+            intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+            startActivity(intent);
 
         });
 
         botaoEntrarConta.setOnClickListener(view -> {
-
+            Intent intent = new Intent(TelaCadastroActivity.this, MainActivity.class);
+            startActivity(intent);
         });
     }
 }
