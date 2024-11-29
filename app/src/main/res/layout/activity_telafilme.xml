@@ -4,87 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000">
+    android:background="#000000"
+    tools:ignore="ExtraText">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/telaFilme"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="0dp">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/androidcompact_1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="55dp"
-            android:layout_height="34dp"
-            app:srcCompat="@drawable/captura_de_tela_2024_11_27_153047"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp" />
+    <Button
+        android:id="@+id/buscar2"
+        android:layout_width="46dp"
+        android:layout_height="31dp"
+        android:text="Home"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="16dp" />
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="104dp"
-            android:layout_height="36dp"
-            app:srcCompat="@drawable/captura_de_tela_2024_11_27_153338"
-            tools:layout_editor_absoluteX="291dp"
-            tools:layout_editor_absoluteY="16dp" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="85dp"
+        android:layout_height="63dp"
+        app:srcCompat="@drawable/captura_de_tela_2024_11_27_142444"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="196dp" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Título"
-            android:textColor="#FFFFFF"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="236dp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="titulo"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="207dp" />
 
-        <VideoView
-            android:id="@+id/videoView"
-            android:layout_width="wrap_content"
-            android:layout_height="240dp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="268dp" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="179dp"
+        android:layout_height="59dp"
+        app:srcCompat="@drawable/captura_de_tela_2024_11_27_142444"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="641dp" />
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="47dp"
-            android:layout_height="36dp"
-            app:srcCompat="@drawable/captura_de_tela_2024_11_27_155149"
-            tools:layout_editor_absoluteX="348dp"
-            tools:layout_editor_absoluteY="654dp" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="193dp"
+        android:layout_height="95dp"
+        app:srcCompat="@drawable/captura_de_tela_2024_11_27_142444"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="569dp" />
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="54dp"
-            android:layout_height="28dp"
-            app:srcCompat="@drawable/captura_de_tela_2024_11_27_155502"
-            tools:layout_editor_absoluteX="113dp"
-            tools:layout_editor_absoluteY="662dp" />
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/captura_de_tela_2024_11_27_142444"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="641dp" />
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="36dp"
-            android:layout_height="30dp"
-            app:srcCompat="@drawable/captura_de_tela_2024_11_27_155812"
-            tools:layout_editor_absoluteX="193dp"
-            tools:layout_editor_absoluteY="662dp" />
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="85dp"
+        android:layout_height="37dp"
+        app:srcCompat="@drawable/captura_de_tela_2024_11_27_142444"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="672dp" /> <!-- Tamanho da fonte -->
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="39dp"
-            android:layout_height="29dp"
-            app:srcCompat="@drawable/captura_de_tela_2024_11_27_160223"
-            tools:layout_editor_absoluteX="258dp"
-            tools:layout_editor_absoluteY="662dp" />
+    <Button
+        android:id="@+id/buscar2"
+        android:layout_width="34dp"
+        android:layout_height="20dp"
+        android:text="Home"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="188dp"
+        tools:layout_editor_absoluteY="672dp" />
 
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="45dp"
-            android:layout_height="37dp"
-            app:srcCompat="@drawable/captura_de_tela_2024_11_27_161645"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="662dp" />
+    <Button
+        android:id="@+id/buscar2"
+        android:layout_width="24dp"
+        android:layout_height="40dp"
+        android:text="Home"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="338dp"
+        tools:layout_editor_absoluteY="601dp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <VideoView
+        android:id="@+id/videoView2"
+        android:layout_width="412dp"
+        android:layout_height="216dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="238dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
