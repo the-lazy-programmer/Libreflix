@@ -16,7 +16,7 @@ public class TelaFilmeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_filme); // Use o nome correto do arquivo XML de layout
+        setContentView(R.layout.activity_telafilme);
 
         // Inicializando os componentes do layout
         ImageView imageView2 = findViewById(R.id.imageView2);
@@ -34,7 +34,7 @@ public class TelaFilmeActivity extends AppCompatActivity {
         VideoView videoView2 = findViewById(R.id.videoView2);
 
         // Configurando o VideoView
-        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.sample_video); // Substitua por seu vídeo
+        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.sample_video); // trocar pelo filme
         videoView2.setVideoURI(videoUri);
         videoView2.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
