@@ -1,5 +1,6 @@
 package com.libreflix.libreflixApp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +24,7 @@ public class AbaBuscarActivity extends AppCompatActivity {
         EditText campoBusca = findViewById(R.id.buscar10);
 
         Button limpar = findViewById(R.id.buscar);
+        Button salvos = findViewById(R.id.buscar3);
         Button home = findViewById(R.id.filmeHome);
         Button buscar = findViewById(R.id.buscar5);
         Button emAlta = findViewById(R.id.buscar6);
@@ -38,22 +40,36 @@ public class AbaBuscarActivity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(AbaBuscarActivity.this, HomeActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
             }
         });
 
         buscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String textoBusca = campoBusca.getText().toString();
-
+                Intent intent = new Intent(AbaBuscarActivity.this, AbaBuscarActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
             }
         });
 
         emAlta.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {  // oi
+            public void onClick(View v) {
+                Intent intent = new Intent(AbaBuscarActivity.this, AbaEmAltaActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
+            }
+        });
 
+        salvos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AbaBuscarActivity.this, AbaSalvosActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
             }
         });
     }
