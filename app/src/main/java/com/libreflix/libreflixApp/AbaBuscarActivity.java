@@ -25,7 +25,7 @@ public class AbaBuscarActivity extends AppCompatActivity {
         Button emAlta = findViewById(R.id.buscar6);
 
 
-        limpar.setOnClickListener(new View.OnClickListener() {
+        limpar.setOnClickListener(new View.OnClickListener() {// oi
             @Override
             public void onClick(View v) {
                 campoBusca.setText("");
