@@ -1,6 +1,5 @@
 package com.libreflix.libreflixApp;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,94 +13,50 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class PerfilActivity extends AppCompatActivity {
 
-    private final PerfilUsuario perfilUsuario;
+    private PerfilUsuario perfilUsuario;
     private PerfilUsuarioDAO perfilUsuarioDAO;
-
-    public PerfilActivity(PerfilUsuario perfilUsuario){
-        this.perfilUsuario = perfilUsuario;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
 
+        // Retrieve perfilUsuario from Intent extras
+        perfilUsuario = (PerfilUsuario) getIntent().getSerializableExtra("perfilUsuario");
+
+        // Initialize PopupWindow for 'sairPerfil'
+        View popupView = LayoutInflater.from(this).inflate(R.layout.sair_popup, null);
+        PopupWindow popupWindow = new PopupWindow(popupView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, true);
+
         Button home = findViewById(R.id.home);
         Button trocar = findViewById(R.id.trocar);
-        Button config = findViewById(R.id.config);
-        Button plano = findViewById(R.id.plano);
-        Button ajuda = findViewById(R.id.ajuda);
         Button sairPerfil = findViewById(R.id.sairPerfil);
 
-        if(perfilUsuario != null){
-
+        if (perfilUsuario != null) {
             perfilUsuarioDAO = Dados.getDatabase(this).perfilUsuarioDAO();
 
-            new Thread(() -> {
-                perfilUsuarioDAO.salvarPerfil(perfilUsuario); // Room operations must be done on a separate thread
-            }).start();
+            // Save perfilUsuario to Room database in a separate thread
+            new Thread(() -> perfilUsuarioDAO.salvarPerfil(perfilUsuario)).start();
 
             TextView nomeUsuario = findViewById(R.id.nomeUsuario);
             TextView emailUsuario = findViewById(R.id.emailUsuario);
             nomeUsuario.setText(perfilUsuario.getNome());
             emailUsuario.setText(perfilUsuario.getEmail());
-
-
         }
 
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                HomeActivity homeActivity = new HomeActivity(perfilUsuario);
-                Intent intent = new Intent(PerfilActivity.this, HomeActivity.class);
-                startActivity(intent);
-            }
-        });
+        home.setOnClickListener(v -> navigateToActivity(HomeActivity.class));
 
-        trocar.setOnClickListener(new View.OnClickListener() { // TODO: FAZER ELE IR PARA A TELA DE TROCAR PERFIL
-            @Override
-            public void onClick(View v) {
-                HomeActivity homeActivity = new HomeActivity(perfilUsuario);
-                Intent intent = new Intent(PerfilActivity.this, HomeActivity.class);
-                startActivity(intent);
-            }
-        });
+        trocar.setOnClickListener(v -> navigateToActivity(TrocarPerfilActivity.class));
 
-        config.setOnClickListener(new View.OnClickListener() { // TODO: FAZER ELE IR PARA A TELA DE CONFIGURAÇÕES
-            @Override
-            public void onClick(View v) {
-                HomeActivity homeActivity = new HomeActivity(perfilUsuario);
-                Intent intent = new Intent(PerfilActivity.this, HomeActivity.class);
-                startActivity(intent);
-            }
+        sairPerfil.setOnClickListener(v -> {
+            popupWindow.showAtLocation(v, 0, 0, 0);
+            // Add logic to handle logout confirmation
         });
+    }
 
-        plano.setOnClickListener(new View.OnClickListener() { // TODO: FAZER ELE IR PARA A TELA DE PLANO(?)
-            @Override
-            public void onClick(View v) {
-                HomeActivity homeActivity = new HomeActivity(perfilUsuario);
-                Intent intent = new Intent(PerfilActivity.this, HomeActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        ajuda.setOnClickListener(new View.OnClickListener() { // TODO: FAZER ELE IR PARA A TELA DE AJUDA
-            @Override
-            public void onClick(View v) {
-                HomeActivity homeActivity = new HomeActivity(perfilUsuario);
-                Intent intent = new Intent(PerfilActivity.this, HomeActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        sairPerfil.setOnClickListener(new View.OnClickListener() { // TODO: ABRIR POPUP DE SAIR
-            @Override
-            public void onClick(View v) {
-                HomeActivity homeActivity = new HomeActivity(perfilUsuario);
-                Intent intent = new Intent(PerfilActivity.this, HomeActivity.class);
-                startActivity(intent);
-            }
-        });
-
+    private void navigateToActivity(Class<?> activityClass) {
+        Intent intent = new Intent(PerfilActivity.this, activityClass);
+        intent.putExtra("perfilUsuario", (CharSequence) perfilUsuario); // Pass the user profile if needed
+        startActivity(intent);
     }
 }

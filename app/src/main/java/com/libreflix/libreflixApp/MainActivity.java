@@ -28,10 +28,6 @@ public class MainActivity extends AppCompatActivity {
         Button buttonLogin = findViewById(R.id.entrar);
         Button buttonConvidado = findViewById(R.id.entrarConvidado);
 
-        // Initialize PopupWindow
-        View popupView = LayoutInflater.from(this).inflate(R.layout.sair_popup, null);
-        popupWindow = new PopupWindow(popupView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, true);
-
         perfilUsuario = new PerfilUsuario(); // Initialize perfilUsuario
 
         buttonLogin.setOnClickListener(new View.OnClickListener() {

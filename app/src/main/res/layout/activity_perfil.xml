@@ -37,6 +37,33 @@
         tools:srcCompat="@drawable/blacklibre" />
 
     <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="487dp"
+        android:layout_height="204dp"
+        app:srcCompat="@drawable/blacklibre"
+        tools:layout_editor_absoluteX="-113dp"
+        tools:layout_editor_absoluteY="432dp"
+        tools:srcCompat="@drawable/blacklibre" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="487dp"
+        android:layout_height="204dp"
+        app:srcCompat="@drawable/blacklibre"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="432dp"
+        tools:srcCompat="@drawable/blacklibre" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="487dp"
+        android:layout_height="204dp"
+        app:srcCompat="@drawable/blacklibre"
+        tools:layout_editor_absoluteX="-30dp"
+        tools:layout_editor_absoluteY="432dp"
+        tools:srcCompat="@drawable/blacklibre" />
+
+    <ImageView
         android:id="@+id/imageView18"
         android:layout_width="336dp"
         android:layout_height="91dp"
@@ -102,33 +129,6 @@
         android:visibility="invisible"
         tools:layout_editor_absoluteX="59dp"
         tools:layout_editor_absoluteY="393dp" />
-
-    <Button
-        android:id="@+id/config"
-        android:layout_width="300dp"
-        android:layout_height="39dp"
-        android:text="Configurações"
-        android:visibility="invisible"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="457dp" />
-
-    <Button
-        android:id="@+id/plano"
-        android:layout_width="300dp"
-        android:layout_height="39dp"
-        android:text="Plano"
-        android:visibility="invisible"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="522dp" />
-
-    <Button
-        android:id="@+id/ajuda"
-        android:layout_width="300dp"
-        android:layout_height="39dp"
-        android:text="Ajuda"
-        android:visibility="invisible"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="586dp" />
 
     <Button
         android:id="@+id/sairPerfil"
