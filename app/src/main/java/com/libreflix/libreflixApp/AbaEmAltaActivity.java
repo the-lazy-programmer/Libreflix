@@ -1,6 +1,8 @@
 package com.libreflix.libreflixApp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,27 +30,76 @@ public class AbaEmAltaActivity extends AppCompatActivity {
         ImageView imgEmAlta = findViewById(R.id.imageView8);
 
 
-        btnVoltar.setOnClickListener(v -> finish());
-        btnMaisVisto.setOnClickListener(v -> {
-            // Ação para o botão "Mais Visto"
+        btnVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AbaEmAltaActivity.this, HomeActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
+            }
         });
-        btnMaisReview.setOnClickListener(v -> {
-            // Ação para o botão "Mais Review"
+
+        btnMaisVisto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AbaEmAltaActivity.this, HomeActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
+            }
         });
-        btnNovidades.setOnClickListener(v -> {
-            // Ação para o botão "Novidades"
+
+        btnMaisReview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AbaEmAltaActivity.this, HomeActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
+            }
         });
-        btnHome.setOnClickListener(v -> {
-            // Ação para o botão "Home"
+
+        btnNovidades.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AbaEmAltaActivity.this, HomeActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
+            }
         });
-        btnSalvos.setOnClickListener(v -> {
-            // Ação para o botão "Salvos"
+
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AbaEmAltaActivity.this, HomeActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
+            }
         });
-        btnBuscar.setOnClickListener(v -> {
-            // Ação para o botão "Buscar"
+
+        btnSalvos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AbaEmAltaActivity.this, AbaSalvosActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
+            }
         });
-        btnEmAlta.setOnClickListener(v -> {
-            // Ação para o botão "Em Alta"
+
+        btnBuscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AbaEmAltaActivity.this, AbaBuscarActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
+            }
+        });
+
+        btnEmAlta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AbaEmAltaActivity.this, AbaEmAltaActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
+            }
         });
     }
 }
