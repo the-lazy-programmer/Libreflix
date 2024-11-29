@@ -1,5 +1,6 @@
 package com.libreflix.libreflixApp;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -34,6 +35,7 @@ public class TelaFilmeActivity extends AppCompatActivity {
 
         Button playButton = findViewById(R.id.play);
         Button fullscreenButton = findViewById(R.id.fullscreen);
+        Button buttonFilmeHome = findViewById(R.id.filmeHome);
 
         VideoView videoView2 = findViewById(R.id.videoView2);
 
@@ -68,6 +70,15 @@ public class TelaFilmeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Exemplo de ação para tela cheia
                 textView.setText("Entrando em tela cheia..."); // Substitua com funcionalidade real se necessário
+            }
+        });
+
+        buttonFilmeHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TelaFilmeActivity.this, HomeActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
             }
         });
     }

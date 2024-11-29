@@ -23,7 +23,7 @@ public class AbaBuscarActivity extends AppCompatActivity {
         EditText campoBusca = findViewById(R.id.buscar10);
 
         Button limpar = findViewById(R.id.buscar);
-        Button home = findViewById(R.id.buscar2);
+        Button home = findViewById(R.id.filmeHome);
         Button buscar = findViewById(R.id.buscar5);
         Button emAlta = findViewById(R.id.buscar6);
 

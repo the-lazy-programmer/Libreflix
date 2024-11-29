@@ -16,7 +16,7 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <Button
-        android:id="@+id/buscar2"
+        android:id="@+id/filmeHome"
         android:layout_width="46dp"
         android:layout_height="31dp"
         android:text="Home"
