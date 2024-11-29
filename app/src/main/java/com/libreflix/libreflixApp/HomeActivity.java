@@ -38,41 +38,50 @@ public class HomeActivity extends AppCompatActivity {
         botaoEmAlta.setVisibility(View.VISIBLE);
 
         // Ações para os botões
-        botaoPerfil.setOnClickListener(view -> abrirPerfil());
-        botaoHome.setOnClickListener(view -> abrirPaginaInicial());
-        botaoSalvos.setOnClickListener(view -> abrirItensSalvos());
-        botaoBuscar.setOnClickListener(view -> abrirBusca());
-        botaoEmAlta.setOnClickListener(view -> abrirEmAlta());
-    }
+        botaoPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, PerfilActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
+            }
+        });
 
-    // Métodos auxiliares para cada funcionalidade
-    private void abrirPerfil() {
-        Intent intent = new Intent(this, PerfilActivity.class);
-        intent.putExtra("perfilUsuario", (CharSequence) perfilUsuario);
-        startActivity(intent);
-    }
+        botaoHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
+            }
+        });
 
-    private void abrirPaginaInicial() {
-        Intent intent = new Intent(this, HomeActivity.class);
-        intent.putExtra("perfilUsuario", (CharSequence) perfilUsuario);
-        startActivity(intent);
-    }
+        botaoSalvos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, AbaSalvosActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
+            }
+        });
 
-    private void abrirItensSalvos() {
-        Intent intent = new Intent(this, AbaSalvosActivity.class);
-        intent.putExtra("perfilUsuario", (CharSequence) perfilUsuario);
-        startActivity(intent);
-    }
+        botaoBuscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this,AbaBuscarActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
+            }
+        });
 
-    private void abrirBusca() {
-        Intent intent = new Intent(this, AbaBuscarActivity.class);
-        intent.putExtra("perfilUsuario", (CharSequence) perfilUsuario);
-        startActivity(intent);
-    }
+        botaoEmAlta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, AbaEmAltaActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
+            }
+        });
 
-    private void abrirEmAlta() {
-        Intent intent = new Intent(this, AbaEmAltaActivity.class);
-        intent.putExtra("perfilUsuario", (CharSequence) perfilUsuario);
-        startActivity(intent);
     }
 }
