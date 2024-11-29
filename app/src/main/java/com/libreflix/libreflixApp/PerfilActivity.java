@@ -29,7 +29,6 @@ public class PerfilActivity extends AppCompatActivity {
         PopupWindow popupWindow = new PopupWindow(popupView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, true);
 
         Button home = findViewById(R.id.home);
-        Button trocar = findViewById(R.id.trocar);
         Button sairPerfil = findViewById(R.id.sairPerfil);
 
         if (perfilUsuario != null) {
@@ -45,10 +44,6 @@ public class PerfilActivity extends AppCompatActivity {
         }
 
         home.setOnClickListener(v -> navigateToActivity(HomeActivity.class));
-
-        trocar.setOnClickListener(v -> {
-            finish();
-        });
 
         sairPerfil.setOnClickListener(v -> {
             finish();

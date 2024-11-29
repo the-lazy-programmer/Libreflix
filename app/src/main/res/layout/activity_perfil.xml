@@ -65,11 +65,11 @@
 
     <ImageView
         android:id="@+id/imageView18"
-        android:layout_width="336dp"
-        android:layout_height="91dp"
+        android:layout_width="417dp"
+        android:layout_height="227dp"
         android:src="@drawable/long_rectangle"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="298dp"
+        tools:layout_editor_absoluteX="-7dp"
+        tools:layout_editor_absoluteY="261dp"
         tools:srcCompat="@drawable/long_rectangle" />
 
     <ImageView
@@ -120,15 +120,6 @@
         android:visibility="invisible"
         tools:layout_editor_absoluteX="-1dp"
         tools:layout_editor_absoluteY="16dp" />
-
-    <Button
-        android:id="@+id/trocar"
-        android:layout_width="300dp"
-        android:layout_height="39dp"
-        android:text="Trocar Perfil"
-        android:visibility="invisible"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="393dp" />
 
     <Button
         android:id="@+id/sairPerfil"
