@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:ignore="ExtraText">
+    tools:ignore="ExatraText">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -75,19 +75,19 @@
         tools:layout_editor_absoluteY="672dp" /> <!-- Tamanho da fonte -->
 
     <Button
-        android:id="@+id/buscar2"
+        android:id="@+id/play"
         android:layout_width="34dp"
         android:layout_height="20dp"
-        android:text="Home"
+        android:text="Play"
         android:visibility="invisible"
         tools:layout_editor_absoluteX="188dp"
         tools:layout_editor_absoluteY="672dp" />
 
     <Button
-        android:id="@+id/buscar2"
+        android:id="@+id/fullscreen"
         android:layout_width="24dp"
         android:layout_height="40dp"
-        android:text="Home"
+        android:text="FullScreen"
         android:visibility="invisible"
         tools:layout_editor_absoluteX="338dp"
         tools:layout_editor_absoluteY="601dp" />
