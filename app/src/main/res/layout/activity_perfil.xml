@@ -61,7 +61,7 @@
         tools:layout_editor_absoluteY="28dp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/nomeUsuario"
         android:layout_width="337dp"
         android:layout_height="43dp"
         android:fontFamily="sans-serif-medium"
@@ -73,7 +73,7 @@
         tools:layout_editor_absoluteY="305dp" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/emailUsuario"
         android:layout_width="336dp"
         android:layout_height="27dp"
         android:fontFamily="sans-serif-light"

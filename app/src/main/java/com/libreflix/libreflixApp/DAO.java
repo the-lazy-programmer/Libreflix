@@ -33,6 +33,14 @@ public class DAO {
         }
     }
 
+    public void appendData(String data) {
+        try (FileOutputStream fileOutputStream = new FileOutputStream(getFile(), true)) {
+            fileOutputStream.write(data.getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public String readData() {
         StringBuilder stringBuilder = new StringBuilder();
         try (FileInputStream fileInputStream = new FileInputStream(getFile());
