@@ -33,6 +33,15 @@
         tools:layout_editor_absoluteX="47dp"
         tools:layout_editor_absoluteY="26dp" />
 
+    <EditText
+        android:id="@+id/buscar10"
+        android:layout_width="252dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="66dp" />
+
     <Button
         android:id="@+id/buscar3"
         android:layout_width="53dp"
