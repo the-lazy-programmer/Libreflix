@@ -7,7 +7,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SalvosActivity extends AppCompatActivity {
+public class AbaSalvosActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,25 +75,6 @@ public class SalvosActivity extends AppCompatActivity {
             public void onClick(View v) {
             }
         });
-    }
-}
-
-
-public class AbaSalvosActivity {
-
-    private  String filmesSalvos[];
-    private String seriesSalvas[];
-
-    public AbaSalvosActivity() {
-
-    }
-
-    public void exibirSalvos() {
-
-
-    }
-    public void removerItem(String itemId) {
-
     }
 }
 
