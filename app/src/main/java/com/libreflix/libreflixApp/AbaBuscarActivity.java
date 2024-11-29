@@ -10,11 +10,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class AbaBuscarActivity extends AppCompatActivity {
 
+    private PerfilUsuario perfilUsuario;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ababuscar);
 
+        perfilUsuario = (PerfilUsuario) getIntent().getSerializableExtra("perfilUsuario");
 
         ImageView imageView = findViewById(R.id.imageView13);
         EditText campoBusca = findViewById(R.id.buscar10);

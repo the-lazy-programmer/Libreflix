@@ -13,10 +13,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class TelaFilmeActivity extends AppCompatActivity {
 
+    private PerfilUsuario perfilUsuario;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_telafilme);
+
+        perfilUsuario = (PerfilUsuario) getIntent().getSerializableExtra("perfilUsuario");
 
         // Inicializando os componentes do layout
         ImageView imageView2 = findViewById(R.id.imageView2);

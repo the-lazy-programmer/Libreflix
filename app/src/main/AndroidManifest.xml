@@ -23,12 +23,10 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".PerfilActivity"/>
         <activity android:name=".TrocarPerfilActivity"/>
-        <activity android:name=".ConfiguracoesActivity"/>
         <activity android:name=".AbaBuscarActivity"/>
         <activity android:name=".AbaEmAltaActivity"/>
         <activity android:name=".TelaCadastroActivity"/>
         <activity android:name=".TelaFilmeActivity"/>
-        <activity android:name=".AjudaActivity"/>
     </application>
 
 </manifest>

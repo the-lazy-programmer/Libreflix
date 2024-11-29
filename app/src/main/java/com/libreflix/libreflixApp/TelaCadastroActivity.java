@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class TelaCadastroActivity extends AppCompatActivity {
 
+    private PerfilUsuario perfilUsuario;
+
     private EditText campoNome;
     private EditText campoEmail;
     private EditText campoSenha;
@@ -21,6 +23,8 @@ public class TelaCadastroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_telacadastro);
+
+        perfilUsuario = (PerfilUsuario) getIntent().getSerializableExtra("perfilUsuario");
 
         // Inicializando os componentes
         campoNome = findViewById(R.id.campoName);

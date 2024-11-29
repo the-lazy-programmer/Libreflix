@@ -4,6 +4,7 @@ package com.libreflix.libreflixApp;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.content.Intent;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,29 +13,22 @@ public class HomeActivity extends AppCompatActivity {
 
     // Declaração dos componentes
     private PerfilUsuario perfilUsuario;
-    private ImageView imagemFundo;
-    private Button botaoPerfil;
-    private Button botaoHome;
-    private Button botaoSalvos;
-    private Button botaoBuscar;
-    private Button botaoEmAlta;
-
-    public HomeActivity(PerfilUsuario perfilUsuario){
-        this.perfilUsuario = perfilUsuario;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        // Recupera os dados do perfilUsuario enviados pela Intent
+        perfilUsuario = (PerfilUsuario) getIntent().getSerializableExtra("perfilUsuario");
+
         // Inicializando os componentes
-        imagemFundo = findViewById(R.id.imageView14);
-        botaoPerfil = findViewById(R.id.home);
-        botaoHome = findViewById(R.id.home2);
-        botaoSalvos = findViewById(R.id.home3);
-        botaoBuscar = findViewById(R.id.home4);
-        botaoEmAlta = findViewById(R.id.home5);
+        ImageView imagemFundo = findViewById(R.id.imageView14);
+        Button botaoPerfil = findViewById(R.id.home);
+        Button botaoHome = findViewById(R.id.home2);
+        Button botaoSalvos = findViewById(R.id.home3);
+        Button botaoBuscar = findViewById(R.id.home4);
+        Button botaoEmAlta = findViewById(R.id.home5);
 
         // Tornando os botões visíveis
         botaoPerfil.setVisibility(View.VISIBLE);
@@ -44,50 +38,41 @@ public class HomeActivity extends AppCompatActivity {
         botaoEmAlta.setVisibility(View.VISIBLE);
 
         // Ações para os botões
-        botaoPerfil.setOnClickListener(view -> {
-            // Lógica ao clicar no botão "Perfil"
-            abrirPerfil();
-        });
-
-        botaoHome.setOnClickListener(view -> {
-            // Lógica ao clicar no botão "Home"
-            abrirPaginaInicial();
-        });
-
-        botaoSalvos.setOnClickListener(view -> {
-            // Lógica ao clicar no botão "Salvos"
-            abrirItensSalvos();
-        });
-
-        botaoBuscar.setOnClickListener(view -> {
-            // Lógica ao clicar no botão "Buscar"
-            abrirBusca();
-        });
-
-        botaoEmAlta.setOnClickListener(view -> {
-            // Lógica ao clicar no botão "Em Alta"
-            abrirEmAlta();
-        });
+        botaoPerfil.setOnClickListener(view -> abrirPerfil());
+        botaoHome.setOnClickListener(view -> abrirPaginaInicial());
+        botaoSalvos.setOnClickListener(view -> abrirItensSalvos());
+        botaoBuscar.setOnClickListener(view -> abrirBusca());
+        botaoEmAlta.setOnClickListener(view -> abrirEmAlta());
     }
 
     // Métodos auxiliares para cada funcionalidade
     private void abrirPerfil() {
-        // Implementar lógica para abrir perfil
+        Intent intent = new Intent(this, PerfilActivity.class);
+        intent.putExtra("perfilUsuario", (CharSequence) perfilUsuario);
+        startActivity(intent);
     }
 
     private void abrirPaginaInicial() {
-        // Implementar lógica para abrir a página inicial
+        Intent intent = new Intent(this, HomeActivity.class);
+        intent.putExtra("perfilUsuario", (CharSequence) perfilUsuario);
+        startActivity(intent);
     }
 
     private void abrirItensSalvos() {
-        // Implementar lógica para abrir itens salvos
+        Intent intent = new Intent(this, AbaSalvosActivity.class);
+        intent.putExtra("perfilUsuario", (CharSequence) perfilUsuario);
+        startActivity(intent);
     }
 
     private void abrirBusca() {
-        // Implementar lógica para abrir busca
+        Intent intent = new Intent(this, AbaBuscarActivity.class);
+        intent.putExtra("perfilUsuario", (CharSequence) perfilUsuario);
+        startActivity(intent);
     }
 
     private void abrirEmAlta() {
-        // Implementar lógica para abrir a página "Em Alta"
+        Intent intent = new Intent(this, AbaEmAltaActivity.class);
+        intent.putExtra("perfilUsuario", (CharSequence) perfilUsuario);
+        startActivity(intent);
     }
 }

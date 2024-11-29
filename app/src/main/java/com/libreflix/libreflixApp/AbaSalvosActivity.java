@@ -9,10 +9,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class AbaSalvosActivity extends AppCompatActivity {
 
+    private PerfilUsuario perfilUsuario;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abasalvos);
+
+        perfilUsuario = (PerfilUsuario) getIntent().getSerializableExtra("perfilUsuario");
 
         ImageView imageView12 = findViewById(R.id.imageView12);
         ImageView imageView19 = findViewById(R.id.imageView19);
