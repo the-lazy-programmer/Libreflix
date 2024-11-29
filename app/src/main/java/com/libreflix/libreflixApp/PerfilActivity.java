@@ -49,8 +49,7 @@ public class PerfilActivity extends AppCompatActivity {
         trocar.setOnClickListener(v -> navigateToActivity(TrocarPerfilActivity.class));
 
         sairPerfil.setOnClickListener(v -> {
-            popupWindow.showAtLocation(v, 0, 0, 0);
-            // Add logic to handle logout confirmation
+            finish();
         });
     }
 
