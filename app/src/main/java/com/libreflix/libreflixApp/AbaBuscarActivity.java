@@ -1,14 +1,57 @@
 package com.libreflix.libreflixApp;
 
-public class AbaBuscarActivity {
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 
-    private String termoBusca;
-    private String resultadosBusca[];
+import androidx.appcompat.app.AppCompatActivity;
 
-    public String termoBusca (String termo) {
-        return null;
-    }
+public class AbaBuscarActivity extends AppCompatActivity {
 
-    public void exibirResultados() {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_ababuscar);
+
+
+        ImageView imageView = findViewById(R.id.imageView13);
+        EditText campoBusca = findViewById(R.id.buscar10);
+
+        Button limpar = findViewById(R.id.buscar);
+        Button home = findViewById(R.id.buscar2);
+        Button buscar = findViewById(R.id.buscar5);
+        Button emAlta = findViewById(R.id.buscar6);
+
+
+        limpar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                campoBusca.setText("");
+            }
+        });
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        buscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String textoBusca = campoBusca.getText().toString();
+
+            }
+        });
+
+        emAlta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
