@@ -40,7 +40,7 @@
         tools:layout_editor_absoluteY="434dp" />
 
     <Button
-        android:id="@+id/salvos3"
+        android:id="@+id/homeSalvos"
         android:layout_width="53dp"
         android:layout_height="64dp"
         android:text="Home"
@@ -49,7 +49,7 @@
         tools:layout_editor_absoluteY="667dp" />
 
     <Button
-        android:id="@+id/salvos4"
+        android:id="@+id/salvosSalvos"
         android:layout_width="53dp"
         android:layout_height="63dp"
         android:text="Salvos"
@@ -58,7 +58,7 @@
         tools:layout_editor_absoluteY="668dp" />
 
     <Button
-        android:id="@+id/salvos5"
+        android:id="@+id/salvosBuscar"
         android:layout_width="55dp"
         android:layout_height="63dp"
         android:text="salvos"
@@ -67,7 +67,7 @@
         tools:layout_editor_absoluteY="667dp" />
 
     <Button
-        android:id="@+id/salvos6"
+        android:id="@+id/salvosEmAlta"
         android:layout_width="52dp"
         android:layout_height="62dp"
         android:text="EmAlta"
