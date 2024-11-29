@@ -1,5 +1,6 @@
 package com.libreflix.libreflixApp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -70,14 +71,19 @@ public class MainActivity extends AppCompatActivity {
                 perfilUsuario.setSenha(password);
 
                 HomeActivity homeActivity = new HomeActivity(perfilUsuario);
-
+                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 
         buttonConvidado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                HomeActivity homeActivity = new HomeActivity(perfilUsuario);
+                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

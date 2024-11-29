@@ -1,6 +1,7 @@
 package com.libreflix.libreflixApp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -52,9 +53,12 @@ public class PerfilActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 HomeActivity homeActivity = new HomeActivity(perfilUsuario);
-                // Fazendo ainda
+                Intent intent = new Intent(PerfilActivity.this, HomeActivity.class);
+                startActivity(intent);
             }
         });
+
+
 
     }
 }
