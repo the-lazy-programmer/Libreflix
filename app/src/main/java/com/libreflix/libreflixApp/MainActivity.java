@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         editTextPassword = findViewById(R.id.campoUsername);
         Button buttonLogin = findViewById(R.id.entrar);
         Button buttonConvidado = findViewById(R.id.entrarConvidado);
+        Button buttonCriarConta = findViewById(R.id.CriarConta);
 
         perfilUsuario = new PerfilUsuario(); // Initialize perfilUsuario
 
@@ -46,6 +47,15 @@ public class MainActivity extends AppCompatActivity {
 
                 // Start HomeActivity
                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
+                startActivity(intent);
+            }
+        });
+
+        buttonCriarConta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TelaCadastroActivity.class);
                 intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
                 startActivity(intent);
             }
