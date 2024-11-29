@@ -39,4 +39,77 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="434dp" />
 
+    <Button
+        android:id="@+id/salvos3"
+        android:layout_width="53dp"
+        android:layout_height="64dp"
+        android:text="Home"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <Button
+        android:id="@+id/salvos4"
+        android:layout_width="53dp"
+        android:layout_height="63dp"
+        android:text="Salvos"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="668dp" />
+
+    <Button
+        android:id="@+id/salvos5"
+        android:layout_width="55dp"
+        android:layout_height="63dp"
+        android:text="salvos"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <Button
+        android:id="@+id/salvos6"
+        android:layout_width="52dp"
+        android:layout_height="62dp"
+        android:text="EmAlta"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="304dp"
+        tools:layout_editor_absoluteY="669dp" />
+
+    <Button
+        android:id="@+id/salvos7"
+        android:layout_width="113dp"
+        android:layout_height="42dp"
+        android:text="retorno"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <Button
+        android:id="@+id/salvos8"
+        android:layout_width="96dp"
+        android:layout_height="31dp"
+        android:text="playlist"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <Button
+        android:id="@+id/salvos9"
+        android:layout_width="96dp"
+        android:layout_height="31dp"
+        android:text="offline"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <Button
+        android:id="@+id/salvos10"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:text="filtrar"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
