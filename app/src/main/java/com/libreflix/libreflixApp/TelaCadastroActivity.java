@@ -7,7 +7,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class CadastroActivity extends AppCompatActivity {
+public class TelaCadastroActivity extends AppCompatActivity {
 
     // joao pfv corrigir os IDS  helppppp :/
     private ImageView imagemCadastro;
