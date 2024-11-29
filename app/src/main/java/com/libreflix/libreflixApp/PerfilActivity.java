@@ -46,7 +46,9 @@ public class PerfilActivity extends AppCompatActivity {
 
         home.setOnClickListener(v -> navigateToActivity(HomeActivity.class));
 
-        trocar.setOnClickListener(v -> navigateToActivity(TrocarPerfilActivity.class));
+        trocar.setOnClickListener(v -> {
+            finish();
+        });
 
         sairPerfil.setOnClickListener(v -> {
             finish();

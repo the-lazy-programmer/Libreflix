@@ -22,7 +22,6 @@
         </activity>
         <activity android:name=".HomeActivity" />
         <activity android:name=".PerfilActivity"/>
-        <activity android:name=".TrocarPerfilActivity"/>
         <activity android:name=".AbaBuscarActivity"/>
         <activity android:name=".AbaEmAltaActivity"/>
         <activity android:name=".TelaCadastroActivity"/>
