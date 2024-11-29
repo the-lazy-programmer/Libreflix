@@ -1,6 +1,6 @@
 package com.libreflix.libreflixApp;
 
-public class ConfiguraçõesActivity {
+public class ConfiguracoesActivity {
 
     private boolean darkMode;
 

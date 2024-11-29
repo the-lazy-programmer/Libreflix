@@ -58,7 +58,50 @@ public class PerfilActivity extends AppCompatActivity {
             }
         });
 
+        trocar.setOnClickListener(new View.OnClickListener() { // TODO: FAZER ELE IR PARA A TELA DE TROCAR PERFIL
+            @Override
+            public void onClick(View v) {
+                HomeActivity homeActivity = new HomeActivity(perfilUsuario);
+                Intent intent = new Intent(PerfilActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        config.setOnClickListener(new View.OnClickListener() { // TODO: FAZER ELE IR PARA A TELA DE CONFIGURAÇÕES
+            @Override
+            public void onClick(View v) {
+                HomeActivity homeActivity = new HomeActivity(perfilUsuario);
+                Intent intent = new Intent(PerfilActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        plano.setOnClickListener(new View.OnClickListener() { // TODO: FAZER ELE IR PARA A TELA DE PLANO(?)
+            @Override
+            public void onClick(View v) {
+                HomeActivity homeActivity = new HomeActivity(perfilUsuario);
+                Intent intent = new Intent(PerfilActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ajuda.setOnClickListener(new View.OnClickListener() { // TODO: FAZER ELE IR PARA A TELA DE AJUDA
+            @Override
+            public void onClick(View v) {
+                HomeActivity homeActivity = new HomeActivity(perfilUsuario);
+                Intent intent = new Intent(PerfilActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        sairPerfil.setOnClickListener(new View.OnClickListener() { // TODO: ABRIR POPUP DE SAIR
+            @Override
+            public void onClick(View v) {
+                HomeActivity homeActivity = new HomeActivity(perfilUsuario);
+                Intent intent = new Intent(PerfilActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

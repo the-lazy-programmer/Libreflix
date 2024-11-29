@@ -35,12 +35,12 @@
 
     <EditText
         android:id="@+id/buscar10"
-        android:layout_width="252dp"
-        android:layout_height="44dp"
+        android:layout_width="229dp"
+        android:layout_height="33dp"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="66dp" />
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="73dp" />
 
     <Button
         android:id="@+id/buscar3"
