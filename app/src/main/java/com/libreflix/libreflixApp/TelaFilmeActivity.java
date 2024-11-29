@@ -38,8 +38,8 @@ public class TelaFilmeActivity extends AppCompatActivity {
         VideoView videoView2 = findViewById(R.id.videoView2);
 
         // Configurando o VideoView
-        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.sample_video); // trocar pelo filme
-        videoView2.setVideoURI(videoUri);
+        //Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.sample_video); // trocar pelo filme
+        //videoView2.setVideoURI(videoUri);
         videoView2.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mp) {

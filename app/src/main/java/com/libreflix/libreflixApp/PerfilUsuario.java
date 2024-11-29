@@ -3,8 +3,10 @@ package com.libreflix.libreflixApp;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import java.io.Serializable;
+
 @Entity(tableName = "perfil_usuario")
-public class PerfilUsuario {
+public class PerfilUsuario implements Serializable {
     @PrimaryKey(autoGenerate = true)
     private int id;
 

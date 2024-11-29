@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // Start HomeActivity
                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
-                intent.putExtra("perfilUsuario", (CharSequence) perfilUsuario);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
                 startActivity(intent);
             }
         });
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 perfilUsuario.setSenha("");
 
                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
-                intent.putExtra("perfilUsuario", (CharSequence) perfilUsuario);
+                intent.putExtra("perfilUsuario", perfilUsuario); // Pass as Serializable
                 startActivity(intent);
             }
         });
