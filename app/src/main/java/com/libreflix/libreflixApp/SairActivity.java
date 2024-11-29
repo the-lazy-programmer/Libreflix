@@ -7,7 +7,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class PopupSairActivity extends AppCompatActivity {
+public class SairActivity extends AppCompatActivity {
 
     // Declaração dos componentes
     private ImageView imagemConfirmacao;
@@ -17,7 +17,7 @@ public class PopupSairActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.popup_sair);
+        setContentView(R.layout.sair_popup);
 
 
         imagemConfirmacao = findViewById(R.id.imageView10);

@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         editTextEmail = findViewById(R.id.editTextTextEmailAddress);
 
-        editTextPassword = findViewById(R.id.editTextTextPassword);
+        editTextPassword = findViewById(R.id.campoUsername);
         Button buttonLogin = findViewById(R.id.entrar);
         Button buttonConvidado = findViewById(R.id.entrarConvidado);
 
@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
                 HomeActivity homeActivity = new HomeActivity(perfilUsuario);
                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -83,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 HomeActivity homeActivity = new HomeActivity(perfilUsuario);
                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                 startActivity(intent);
-                finish();
+
             }
         });
     }

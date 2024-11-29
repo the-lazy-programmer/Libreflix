@@ -11,16 +11,16 @@
         android:id="@+id/imageView11"
         android:layout_width="692dp"
         android:layout_height="1014dp"
-        android:src="@tools:sample/avatars"
+        android:src="@drawable/blacklibre"
         tools:layout_editor_absoluteX="-140dp"
         tools:layout_editor_absoluteY="-140dp"
-        tools:srcCompat="@drawable/black" />
+        tools:srcCompat="@drawable/blacklibre" />
 
     <ImageView
         android:id="@+id/imageView15"
         android:layout_width="415dp"
         android:layout_height="737dp"
-        android:src="@tools:sample/avatars"
+        android:src="@drawable/blacklibre"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,15 +31,16 @@
         android:id="@+id/imageView16"
         android:layout_width="305dp"
         android:layout_height="207dp"
-        app:srcCompat="@drawable/black"
+        app:srcCompat="@drawable/blacklibre"
         tools:layout_editor_absoluteX="-31dp"
-        tools:layout_editor_absoluteY="-106dp" />
+        tools:layout_editor_absoluteY="-106dp"
+        tools:srcCompat="@drawable/blacklibre" />
 
     <ImageView
         android:id="@+id/imageView18"
         android:layout_width="336dp"
         android:layout_height="91dp"
-        android:src="@tools:sample/avatars"
+        android:src="@drawable/long_rectangle"
         tools:layout_editor_absoluteX="38dp"
         tools:layout_editor_absoluteY="298dp"
         tools:srcCompat="@drawable/long_rectangle" />
