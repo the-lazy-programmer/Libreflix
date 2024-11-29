@@ -13,4 +13,3 @@ public class EntrarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_entrar);
     }
 }
-
